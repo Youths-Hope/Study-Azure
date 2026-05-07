@@ -37,6 +37,13 @@ param keyVaultName string = 'study-kv-youth001'
 @description('App Service 名')
 param appName string = 'study-app-001'
 
+@description('Key Vault 作成/復元指定')
+@allowed([
+  'create'
+  'recover'
+])
+param kvMode string = 'recover'
+
 @description('App Service Plan 名')
 param planName string = 'study-app-plan'
 
