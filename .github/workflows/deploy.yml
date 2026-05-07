@@ -28,7 +28,7 @@ jobs:
         run: |
           az deployment sub create \
             --location japaneast \
-            --template-file main.bicep \
+            --template-file Bicep/main.bicep \
             --parameters \
               rgName=study-rg \
               rgLocation=japaneast \
