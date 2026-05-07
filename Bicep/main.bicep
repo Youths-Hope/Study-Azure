@@ -89,7 +89,7 @@ module keyvault './keyvault.bicep' = {
     location: rgLocation
     keyVaultName: keyVaultName
     dbPassword: adminPassword
-    kvMode: 'recover'
+    kvMode: kvMode
   }
 }
 
