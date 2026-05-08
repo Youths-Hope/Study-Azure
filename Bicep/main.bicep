@@ -89,6 +89,7 @@ module storage './storage.bicep' = {
 // =======================
 // Key Vault
 // =======================
+//      (kvModeによる作成か復元を指定)
 module keyvault './keyvault.bicep' = {
   name: 'keyVaultDeploy'
   scope: rg
